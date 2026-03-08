@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Famous Spots in Pune</title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#c62828;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav button{
+padding:15px 25px;
+border:none;
+background:none;
+cursor:pointer;
+font-size:16px;
+}
+
+nav button:hover{
+background:#ffeaea;
+color:#c62828;
+}
+
+.active{
+border-bottom:3px solid red;
+color:red;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:auto;
+margin-top:30px;
+}
+
+.tab-content{
+display:none;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:25px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+color:#222;
+}
+
+/* image slider */
+
+.slider{
+position:relative;
+max-width:100%;
+overflow:hidden;
+margin-top:15px;
+}
+
+.slider img{
+width:100%;
+display:none;
+border-radius:10px;
+}
+
+.slider img.active{
+display:block;
+}
+
+.slider button{
+position:absolute;
+top:45%;
+background:rgba(0,0,0,0.6);
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Famous Spots in Pune</h1>
+</header>
+
+<nav>
+<button class="tab-btn active" onclick="openTab(event,'spiritual')">Spiritual</button>
+<button class="tab-btn" onclick="openTab(event,'nature')">Nature</button>
+<button class="tab-btn" onclick="openTab(event,'food')">Food</button>
+</nav>
+
+<div class="container">
+
+<!-- Spiritual -->
+
+<div id="spiritual" class="tab-content" style="display:block">
+
+<div class="card">
+<h2>Dagdusheth Ganpati</h2>
+
+
+<p>The most iconic Ganesh temple in Pune. Known for its beautiful golden idol and huge celebrations during Ganeshotsav.
+		People call him a "Navasacha Ganpati" because the temple was originally built as an act of faith during a time of great suffering (the plague). To "complete all Navas" implies that the deity is so powerful that no sincere prayer goes unanswered.<br><br>
+
+Origin (1893): Built by sweet-maker Dagdusheth Halwai and his wife Lakshmibai after losing their son to the plague.<br><br>
+Historical Role: It was the birthplace of the Public Ganeshotsav movement, started by Lokmanya Tilak to unite Indians against British rule.<br><br>
+The Deity: Features a massive 7.5-foot Ganesha idol adorned with nearly 40kg of gold.<br><br>
+Charity: The temple trust is famous for its massive social work, running hospitals, old age
+</p>
+
+<div class="slider">
+<img src="p101.jpg" class="active">
+<img src="p2.jpeg">
+<img src="p3.jpg">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+
+</div>
+<div class="card">
+<h2>2.Parvati Hill</h2>
+<p>Parvati Hill is one of the most scenic and significant historical locations in Pune, standing 2,100 feet above sea level. It was developed primarily during the era of the Peshwas and remains a vital spiritual and recreational hub for the city.<br><br>
+
+The climb involves approximately 103 wide stone steps, leading you to a complex of temples and a panoramic viewpoint that offers a 360-degree look at the Pune skyline.<br><br>
+
+Peshwa Heritage: The main Parvati Temple was completed in 1749 by Nana Saheb Peshwa. It serves as a memorial to the Peshwa dynasty, and the hill also houses the Peshwa Museum, which displays artifacts, weapons, and coins from that era.<br><br>
+
+Diverse Shrines: While the Devdeveshwar temple (Lord Shiva) is the most prominent, the hill also features temples dedicated to Lord Vishnu, Kartikeya, and Vitthal-Rukmini.<br><br>
+
+The "Sunset Point": It is widely considered the best place in the city to watch the sunrise or sunset, as the elevation provides a clear view of the surrounding hills and urban landscape.<br><br>
+
+Historical Tragedy: Legend says that Balaji Baji Rao (Nana Saheb) watched the defeat of his army at the Third Battle of Panipat from this hill, and he eventually passed away here shortly after.</p>
+<div class="slider">
+
+<img src="p4.jpg" class="active">
+<img src="p5.jpg">
+<img src="p100.jpg">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+</div>
+</div>
+<div class="card">
+<h2>3.Chaturshringi Temple</h2>
+<p>The Chaturshringi Temple is a hillside shrine on Senapati Bapat Road dedicated to the Goddess Chaturshringi (the presiding deity of Pune)<br><br>
+
+The Name: "Chaturshringi" means a mountain with four peaks, representing the Goddess's power.<br><br>
+
+The Climb: You need to climb about 100 to 170 stone steps to reach the main temple.<br><br>
+
+Navratri Hub: It is the most popular place in Pune during the Navratri festival, hosting a massive fair and beautiful illuminations.<br><br>
+
+The Experience: Offers a peaceful, breezy atmosphere with a great view of the city from the top.<br><br>
+
+Location: Very close to Pune University and the JW Marriott, making it easy to access.<br><br>.</p>
+<div class="slider">
+
+<img src="p8.jpg" class="active">
+<img src="p7.jpg">
+<img src="p9.jpg"class="active">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+</div>
+</div>
+<div class="card">
+<h2>4. Saras Baug</h2>
+ <p>saras baug is a major landmark in Pune, known for its historic temple set within a scenic park that was once a lake.<br><br>
+
+Talyatla Ganpati: The central attraction is the 18th-century "Talyatla Ganpati" (Ganpati in the lake) temple, which originally stood in the middle of a lake created by the Peshwas.<br><br>
+
+Greenery and Recreation: Today, the dried lakebed has been converted into 25 acres of lush gardens, making it a popular spot for morning walks and family outings.<br><br>
+
+Museum: The temple premises house a small museum featuring a unique collection of over 100 Ganesha idols from different parts of the world.<br><br>
+
+Chowpatty Vibes: The area outside the park is famous for its street food stalls, often called Pune’s own "mini Chowpatty," serving popular snacks like pav bhaji and bhel puri</p>
+
+<div class="slider">
+
+<img src="p103.jpg"class="active">
+<img src="p12.jpg">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div>
+<!-- Nature -->
+
+<div id="nature" class="tab-content">
+
+<div class="card">
+<h2>Sinhagad Fort</h2>
+<p>located about 25 km from Pune, is a legendary hill fortress that has witnessed some of the most pivotal battles in Maratha history. Perched on a cliff of the Bhuleshwar range, it is a favorite for both history enthusiasts and nature lovers.<br><br>
+
+The Battle of Sinhagad: The fort is most famous for the 1670 battle where Tanaji Malusare, a general for Chhatrapati Shivaji Maharaj, recaptured it from the Mughals. Though the Marathas won, Tanaji lost his life, leading Shivaji Maharaj to famously remark, "Gad ala, pan sinha gela" (The fort is won, but the lion is gone).<br><br>
+
+Tanaji Malusare Memorial: Visitors can see the memorial dedicated to the brave general, alongside the samadhi (tomb) of Rajaram Raje Bhosle, Shivaji Maharaj's son.<br><br>
+
+Local Culinary Experience: A visit is incomplete without trying the traditional Maharashtrian food served by local villagers at the top, specifically the famous Pithla Bhakri (chickpea flour curry and millet bread) and Thecha (spicy chili condiment), often followed by fresh curd in earthen pots.<br><br>
+
+Trekking and Views: It is a popular trekking destination; the climb offers stunning panoramic views of the Sahyadri mountains and the Khadakwasla Dam below, especially during the monsoon when the area is covered in mist and greenery.</p>
+
+
+<div class="slider">
+
+<img src="p14.jpg" class="active">
+<img src="p13.jpg">
+<img src="p15.jpg.crdownload">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+
+
+<div class="card">
+<h2>2.Shaniwar Wada</h2>
+<p>Shaniwar Wada is the most iconic historical landmark in Pune, serving as the majestic seat of the Peshwas of the Maratha Empire until 1818. Though a massive fire in 1828 destroyed much of its wooden interior, the imposing stone walls and fortifications remain a symbol of Maratha pride and architectural ingenuity.<br><br>
+
+The Delhi Darwaza: The main entrance is famous for its massive iron spikes, designed to protect the palace from elephant-led charges.<br><br>
+
+The Ruins and Gardens: While the palace buildings are gone, the stone foundations offer a clear layout of the original structure, surrounded by well-maintained lawns.<br><br>
+
+Light and Sound Show: An evening show narrates the history of the Peshwas, bringing the ruins to life with stories of bravery and tragedy.<br><br>
+
+The Legend of Narayan Rao: The site is famously associated with the ghost of the young Peshwa Narayan Rao, whose spirit is said to haunt the grounds on full moon nights..</p>
+
+<div class="slider">
+
+<img src="p16.jpg" class="active">
+<img src="p17.jpg">
+<img src="p18.jpg">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+</div>
+</div>
+<div class="card">
+<h2>3.Khadakwasla Dam </h2>
+<p> Khadakwasla Dam is the primary source of water for Pune and one of the city's most popular weekend getaway spots.<br>
+
+🌊 In Short:
+The Lifeline: It is the main dam that supplies drinking water to almost the entire city of Pune.<br><br>
+
+The Location: Situated about 20 km from the city center, right at the base of the road leading to Sinhagad Fort.<br><br>
+
+"Pune’s Sea": Because of its vast expanse of water, locals often visit the "Chowpatty" (lakefront) to enjoy the breeze and the view, especially during the monsoon.<br><br>
+
+Street Food: The promenade is famous for its snacks, particularly hot corn-on-the-cob (bhutta), bhel puri, and bhajiyas.<br><br>
+
+Defense Connection: The prestigious National Defence Academy (NDA) is located right next to the dam, and you can often see military activities or the beautiful Peacock Bay from certain points..</p>
+
+<div class="slider">
+
+<img src="p20.jpg" class="active">
+<img src="p21.jpg">
+<img src="p22.jpg">
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+</div>
+</div>
+
+
+<!-- Food -->
+
+<div id="food" class="tab-content">
+
+<div class="card">
+<h2>1.Shri Krishna Bhuvan</h2>
+
+<p>Shri Krishna Bhuvan (often called Shri Krishna Bhavan) is another "temple" for misal lovers in Pune, located in the busy lanes of Tulshibaug. Since 1941, it has maintained a very specific, traditional style that sets it apart from the others.
+
+🍜 Why it’s Unique:
+The "Pohe-Bhaji" Base: Unlike many misals that use sprouts (matki), Shri Krishna’s version uses a base of Yellow Poha and Potato Bhaji.<br><br>
+
+Bread over Pav: Following old-school Puneri tradition, they serve sliced white bread (often wood-fired) instead of the standard ladi pav.<br><br>
+
+The "Sample" (Gravy): Their tarri is famous for being a perfect balance—spicy, slightly tangy from tomatoes, and rich with grated coconut. It's flavorful without being "blow-your-socks-off" spicy.<br><br>
+
+Signature Onion Bhajji: Their Kanda Bhajji (onion pakodas) are legendary; they even invented the "half-plate" concept so you can enjoy them alongside your misal.<br><br>
+
+📍 Key Details:
+Location: 1164, Budhwar Peth (near Tulshibaug/Moti Chowk). It’s tucked away, so you might need to ask locals once you're in the market.<br><br>
+
+Timings: Usually open from 7:30 AM to 4:00 PM. They often shut down once they run out of stock, so go early!<br><br>
+
+Vibe: It’s a no-frills, old-world eatery. You might have to share a table with strangers, and there’s usually a queue on weekends.<br><br>
+
+Monday Holiday: Like many Tulshibaug area shops, they are typically closed on Mondays.</p>
+
+<div class="slider">
+
+<img src="p50.jpg" class="active">
+<img src="p51.jpg">
+<img src="p53.jpg">
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+
+</div><div class="card">
+<h2>2. Bedekar Misal</h2>
+
+<p>Bedekar Misal is a legendary culinary institution in Pune, specifically located in the Narayan Peth area. Established in 1948, it is one of the most famous spots to experience authentic Puneri Misal.<br><br>
+
+Signature Taste: Their misal is known for being mildly spicy with a hint of sweetness, served with a unique sliced bread (slice pav) rather than the traditional small buns.<br><br>
+
+The Experience: It is a no-frills, traditional establishment where you often have to stand in queues, especially on weekend mornings.<br><br>
+
+Additional Menu: While the misal is the star, they are also popular for their batata vada and refreshing solkadhi.<br><br>
+
+Legacy: It remains a favorite among locals who prefer the old-school Puneri flavor profile over the extra-spicy Kolhapuri versions found elsewhere.</p>
+
+<div class="slider">
+
+<img src="p25.jpg" class="active">
+<img src="p23.jpg">
+<img src="p24.jpg">
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>3.Chitale Bandhu (Bakarwadi)</h2>
+
+        <p>Chitale Bandhu is Pune’s most iconic snack and sweet brand, synonymous with the city's food culture.<br><br>
+
+Bakarwadi King: Famous globally for their Bakarwadi—a crunchy, spicy, and tangy savory snack that people often buy in bulk.<br><br>
+
+Dairy Heritage: Started as a dairy business in 1950; they are highly trusted for milk products like Shrikhand, Amrakhand, and fresh Paneer.<br>
+
+Mango Specialties: Their Amba Barfi (mango fudge) made from Alphonso mangoes is a seasonal bestseller.<br><br>
+
+Iconic Location: The main branch is on Bajirao Road, but they now have "Express" outlets all over the city.<br><br>
+
+Puneri Tradition: Buying a packet of Chitale Bakarwadi is considered a "mandatory" ritual for anyone visiting Pune.</p>
+
+<div class="slider">
+
+<img src="p54.jpg" class="active">
+<img src="p55.jpg">
+<img src="p56.jpg">
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div><div class="card">
+<h2>4.Santosh Bakery</h2>
+
+       <p>Santosh Bakery is a nostalgic, old-school institution in Pune, established in 1968. It is famous for being one of the first places to introduce the "Veg Pattice" to the city.<br><br>
+
+🥟 The Must-Try Items:
+Veg Pattice: The undisputed star. It’s a flaky, multilayered puff pastry filled with a savory potato stuffing. It is traditionally baked in a wood-fired oven, giving it a subtle smoky flavor.<br><br>
+
+Coconut Cake: A soft, fresh, and slightly sweet cake that is a fan favorite.<br><br>
+
+Cream Rolls & Honey Rolls: Classic childhood favorites that are consistently fresh.<br><br>
+
+Milk Bread & Ladi Pav: Known for being exceptionally soft and fresh.<br><br>
+
+📍 Key Locations:
+Apte Road (Shivajinagar): The original and most iconic branch. It's located right at the turn of Apte Road near J.M. Road.<br><br>
+
+Sinhagad Road (Anand Nagar): A very popular branch for those living on the other side of the city.</p>
+
+<div class="slider">
+
+<img src="p58.jpg" class="active">
+<img src="p57.jpg">
+<img src="p59.jpg">
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div><div class="card">
+<h2>5.Garden Vada Pav</h2>
+
+       <p>Garden Vada Pav is a legendary street food stall in Pune, often ranked as the #1 spot in the city for this iconic snack.<br> It started as a small cart in 1972 and has since become a massive local favorite.
+
+🥟 The Vada Pav Experience
+Signature Taste: Their Vada Pav is known for its oversized, piping-hot vada and a unique, spicy green chutney that is considered their "secret weapon."<br><br>
+
+The "Chura": One of their most popular additions is the Chura (crispy fried batter bits) served alongside the Vada Pav for extra crunch.<br><br>
+
+Masala Taak: Most locals pair their Vada Pav with a glass of their refreshing Masala Taak (spiced buttermilk) to balance the heat.<br><br>
+
+📍 Locations
+Camp (The Original): Located on Buttee Street, opposite J.J. Garden (hence the name). This is the iconic "cart" experience where you'll always find a bustling crowd.<br><br>
+
+Erandwane (Nal Stop): A more structured outlet near Nal Stop on Karve Road for those on the other side of town.<br><br>
+
+Kharadi & Hadapsar: They have expanded with "Garden Cafe" and express outlets to cater to the IT crowds.</p>
+
+<div class="slider">
+
+<img src="p60.jpeg" class="active">
+<img src="p61.jpeg">
+
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div><div class="card">
+<h2>6.Sujata Mastani</h2>
+
+       <p>Sujata Mastani is a legendary dessert destination in Pune, famous for its unique thick milkshake topped with ice cream, known as "Mastani." Named after the beautiful Mastani of Peshwa history, this treat has become a quintessential part of the city's food culture.<br><br>
+
+Signature Thick Shakes: Their most famous offering is the Mango Mastani, which consists of a thick, creamy mango milkshake topped with chunks of fresh fruit, a large scoop of mango ice cream, and a garnish of dry fruits.<br><br>
+
+Diverse Flavors: While mango is the top choice, they offer over 20 different varieties, including Kesar Pista, Chocolate, Strawberry, and the exotic Rose Mastani.</p>
+
+<div class="slider">
+
+<img src="p70.jpg" class="active">
+<img src="p71.jpg">
+
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+</div><div class="card">
+<h2>7.Cafe Goodluck</h2>
+
+       <p>Cafe Goodluck is one of Pune's most iconic and oldest Irani-style cafes, established in 1935 at the busy intersection now known as Goodluck Chowk. It is a legendary landmark where students, locals, and tourists gather for a quintessential "Old Pune" dining experience.<br><br>
+
+Signature Bun Maska and Chai: No visit is complete without their famous Bun Maska (buttered buns) paired with a hot cup of Irani Chai. The buns are known for being incredibly soft and fresh.<br><br>
+
+Keema Ghotala: A favorite for non-vegetarians, their spicy and flavorful Keema (minced meat) dishes, often served with buttery pav or eggs, are legendary breakfast and lunch staples.<br><br>
+
+Old-World Atmosphere: The cafe retains its classic charm with high ceilings, wooden furniture, and a bustling, fast-paced vibe that hasn't changed much in decades.<br><br>
+
+Iconic Location: Situated right on Fergusson College Road, it is a perfect starting point or pit-stop for anyone exploring the Deccan Gymkhana area.</p>
+
+<div class="slider">
+
+<img src="p80.jpg.crdownload" class="active">
+<img src="p81.jpg">
+
+
+
+<button class="prev" onclick="moveSlide(this,-1)">❮</button>
+<button class="next" onclick="moveSlide(this,1)">❯</button>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>Explore Pune Tourism</p>
+<p>Made by Avishkar</p>
+</footer>
+
+<script>
+
+/* tab system */
+
+function openTab(evt,tabName){
+
+var tabcontent=document.getElementsByClassName("tab-content");
+
+for(i=0;i<tabcontent.length;i++){
+tabcontent[i].style.display="none";
+}
+
+var tabs=document.getElementsByClassName("tab-btn");
+
+for(i=0;i<tabs.length;i++){
+tabs[i].classList.remove("active");
+}
+
+document.getElementById(tabName).style.display="block";
+
+evt.currentTarget.classList.add("active");
+
+}
+
+
+/* slider */
+
+function moveSlide(btn,step){
+
+let slider=btn.parentElement;
+
+let slides=slider.querySelectorAll("img");
+
+let index=0;
+
+slides.forEach((img,i)=>{
+if(img.classList.contains("active")){
+index=i;
+img.classList.remove("active");
+}
+});
+
+index=(index+step+slides.length)%slides.length;
+
+slides[index].classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
